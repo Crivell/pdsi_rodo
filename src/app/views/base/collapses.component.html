@@ -1,26 +1,69 @@
 <div class="animated fadeIn">
-  <div class="card">
-    <div class="card-header">
-      Bootstrap Collapse
-      <div class="card-header-actions">
-        <a href="https://valor-software.com/ngx-bootstrap/#/collapse" target="_blank">
-          <small className="text-muted">docs</small>
-        </a>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Moje oceny
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Nazwa oceny</th>
+                <th>Ocena</th>
+                <th>Punkty / 20</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2012/02/01</td>
+                <td>Kolokwium 1</td>
+                <td>5</td>
+                <td>
+                  <span class="badge badge-success">20</span>
+                </td>
+              </tr>
+              <tr>
+                <td>2012/03/01</td>
+                <td>Kartkówka</td>
+                <td>4</td>
+                <td>
+                  <span class="badge badge-success">15</span>
+                </td>
+              </tr>
+              <tr>
+                <td>2012/03/01</td>
+                <td>Kolokwium 2</td>
+                <td>2</td>
+                <td>
+                  <span class="badge badge-danger">5</span>
+                </td>
+              </tr>
+              <tr>
+                <td>2012/04/01</td>
+                <td>Poprawa kolokwium 2</td>
+                <td>3</td>
+                <td>
+                  <span class="badge badge-warning">10</span>
+                </td>
+              </tr>
+              <tr>
+                <td>2012/01/21</td>
+                <td>Egzamin</td>
+                <td>2</td>
+                <td>
+                  <span class="badge badge-danger">3</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
-    <div class="card-body"
-         (collapsed)="collapsed($event)"
-         (expanded)="expanded($event)"
-         [collapse]="isCollapsed">
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-        consequat.
-      </p>
-    </div>
-    <div class="card-footer">
-      <button type="button" class="btn btn-primary"
-              (click)="isCollapsed = !isCollapsed">Toggle collapse
-      </button>
-    </div>
+    <!--/.col-->
+
   </div>
+  <!--/.row-->
+
 </div>

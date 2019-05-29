@@ -17,7 +17,7 @@ const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Base'
+      title: ''
     },
     children: [
       {
@@ -28,7 +28,7 @@ const routes: Routes = [
         path: 'cards',
         component: CardsComponent,
         data: {
-          title: 'Cards'
+          title: 'Przedmiot 1 - lista ocen, dostępna tylko dla prowadzącego'
         }
       },
       {
@@ -63,14 +63,14 @@ const routes: Routes = [
         path: 'carousels',
         component: CarouselsComponent,
         data: {
-          title: 'Carousels'
+          title: 'Przedmiot 2 - oceny do wstawienia przez prowadzącego'
         }
       },
       {
         path: 'collapses',
         component: CollapsesComponent,
         data: {
-          title: 'Collapses'
+          title: 'Przedmiot 3 - widok dla studenta'
         }
       },
       {
