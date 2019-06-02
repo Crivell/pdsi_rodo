@@ -3,15 +3,15 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
-import { CardsComponent } from './cards.component';
+import { StudentListComponent } from './studentList.component';
 
 // Carousel Component
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { CarouselsComponent } from './carousels.component';
+import { InsertMarksComponent } from './insertMarks.component';
 
 // Collapse Component
 import { CollapseModule } from 'ngx-bootstrap/collapse';
-import { CollapsesComponent } from './collapses.component';
+import { studentMarksComponent } from './studentMarks.component';
 
 // Dropdowns Component
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
@@ -31,9 +31,9 @@ import { BaseRoutingModule } from './base-routing.module';
     CollapseModule.forRoot(),
   ],
   declarations: [
-    CardsComponent,
-    CarouselsComponent,
-    CollapsesComponent
+    StudentListComponent,
+    InsertMarksComponent,
+    studentMarksComponent
   ]
 })
 export class BaseModule { }

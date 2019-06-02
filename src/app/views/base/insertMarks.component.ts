@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { CarouselConfig } from 'ngx-bootstrap/carousel';
 
 @Component({
-  templateUrl: 'carousels.component.html',   providers: [
+  templateUrl: 'insertMarks.component.html',   providers: [
     { provide: CarouselConfig, useValue: { interval: 1500, noPause: true } }
   ]
 })
-export class CarouselsComponent {
+export class InsertMarksComponent {
 
   myInterval: number = 6000;
   slides: any[] = [];

@@ -37,17 +37,17 @@ export const navItems: NavData[] = [
   children: [
     {
     name: 'Przedmiot 1',
-    url: '/base/cards',
+    url: '/base/studentList',
     icon: 'icon-star'
     },
     {
       name: 'Przedmiot 2',
-      url: '/base/carousels',
+      url: '/base/insertMarks',
       icon: 'icon-star'
       },
       {
         name: 'Przedmiot 3',
-        url: '/base/collapses',
+        url: '/base/studentMarks',
         icon: 'icon-star'
         },
   ]

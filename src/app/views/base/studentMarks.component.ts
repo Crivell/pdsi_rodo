@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: 'collapses.component.html'
+  templateUrl: 'studentMarks.component.html'
 })
-export class CollapsesComponent {
+export class studentMarksComponent {
 
   constructor() { }
 
