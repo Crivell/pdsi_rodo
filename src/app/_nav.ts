@@ -29,7 +29,7 @@ export interface NavData {
   wrapper?: NavWrapper;
 }
 
-export const navItems: NavData[] = [
+export var navItems: NavData[] = [
   {
   name: 'Przedmioty',
   url: '/base',
@@ -62,7 +62,7 @@ export const navItems: NavData[] = [
   },
   {
     name: 'Dodaj przedmiot',
-    url: '/base/studentList',
+    url: '/base/newSubject',
     icon: 'icon-layers',
     variant: 'danger',
     attributes: { target: '_blank', rel: 'noopener' }

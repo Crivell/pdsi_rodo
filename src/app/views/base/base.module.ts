@@ -21,6 +21,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 // Components Routing
 import { BaseRoutingModule } from './base-routing.module';
+import { AddSubjectComponent } from '../../add-subject/add-subject.component';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import { BaseRoutingModule } from './base-routing.module';
   declarations: [
     StudentListComponent,
     InsertMarksComponent,
-    studentMarksComponent
+    studentMarksComponent,
+    AddSubjectComponent
   ]
 })
 export class BaseModule { }

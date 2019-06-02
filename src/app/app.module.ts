@@ -40,6 +40,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { TestFormComponent } from './test-form/test-form.component';
+import { FindStudentComponent } from './find-student/find-student.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -53,7 +55,9 @@ import { TestFormComponent } from './test-form/test-form.component';
     PerfectScrollbarModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
-    ChartsModule
+    ChartsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   declarations: [
     AppComponent,
@@ -62,7 +66,9 @@ import { TestFormComponent } from './test-form/test-form.component';
     P500Component,
     LoginComponent,
     RegisterComponent,
-    TestFormComponent
+    TestFormComponent,
+    FindStudentComponent,
+    // AddSubjectComponent
   ],
   providers: [{
     provide: LocationStrategy,

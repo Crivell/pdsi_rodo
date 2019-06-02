@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { StudentListComponent } from './studentList.component';
 import { InsertMarksComponent } from './insertMarks.component';
 import { studentMarksComponent } from './studentMarks.component';
+import { AddSubjectComponent } from '../../add-subject/add-subject.component';
 
 
 const routes: Routes = [
@@ -36,6 +37,13 @@ const routes: Routes = [
         component: studentMarksComponent,
         data: {
           title: 'Przedmiot 3 - widok dla studenta'
+        }
+      },
+      {
+        path: 'newSubject',
+        component: AddSubjectComponent,
+        data: {
+          title: 'Adding new subject'
         }
       }
     ]
