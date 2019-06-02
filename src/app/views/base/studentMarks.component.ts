@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { MarkRecord } from '../../mark-record';
 
 @Component({
   templateUrl: 'studentMarks.component.html'
 })
 export class studentMarksComponent {
-
-  constructor() { }
 
   isCollapsed: boolean = false;
 

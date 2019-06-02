@@ -54,7 +54,7 @@ export const navItems: NavData[] = [
   },
   {
     name: 'Wyszukaj studenta',
-    url: '/base/cards',
+    url: '/base/studentList',
     icon: 'icon-cloud-download',
     // class: 'mt-auto',
     variant: 'success',
@@ -62,7 +62,7 @@ export const navItems: NavData[] = [
   },
   {
     name: 'Dodaj przedmiot',
-    url: '/base/cards',
+    url: '/base/studentList',
     icon: 'icon-layers',
     variant: 'danger',
     attributes: { target: '_blank', rel: 'noopener' }
