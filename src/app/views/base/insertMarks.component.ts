@@ -1,33 +1,52 @@
 import { Component } from '@angular/core';
 import { CarouselConfig } from 'ngx-bootstrap/carousel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   templateUrl: 'insertMarks.component.html',   providers: [
     { provide: CarouselConfig, useValue: { interval: 1500, noPause: true } }
-  ]
+  ],
+  // animations: [
+  //   trigger('formSentSuccess', [
+  //     state('no', style({
+  //       visibility: 'visible'
+  //     })),
+  //     state('yes', style({
+  //       visibility: 'hidden'
+  //     })),
+  //     transition('no => yes', [
+  //       animate('0.5s')
+  //     ])
+  //   ])
+  // ]
 })
 export class InsertMarksComponent {
 
-  myInterval: number = 6000;
-  slides: any[] = [];
-  activeSlideIndex: number = 0;
-  noWrapSlides: boolean = false;
-
-  constructor() {
-    for (let i = 0; i < 4; i++) {
-      this.addSlide();
-    }
+  markName = ''
+  markDate = new Date()
+  submitted = false
+  formSentSuccess = 'no'
+  clearForm(): void {
+    this.markName = ''
+    this.markDate = null
   }
 
-  addSlide(): void {
-    this.slides.push({
-      image: `https://loremflickr.com/900/500/sailing?random=${this.slides.length % 8 + 1}/`
-    });
+  onSubmit(): void {
+    this.submitted = true
   }
+ 
 
-  removeSlide(index?: number): void {
-    const toRemove = index ? index : this.activeSlideIndex;
-    this.slides.splice(toRemove, 1);
-  }
-
+  // constructor() {
+  //   for (let i = 0; i < 4; i++) {
+  //     this.addSlide();
+  //   }
+  // }
 }
